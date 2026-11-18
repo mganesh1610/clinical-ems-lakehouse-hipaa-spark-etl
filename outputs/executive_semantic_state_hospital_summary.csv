@@ -1,0 +1,178 @@
+state,hospital_type,reporting_facilities,mean_ed_arrival_to_departure_min,mean_left_without_being_seen_pct,mean_sepsis_bundle_compliance_pct,mean_total_episode_spending_usd,mean_spending_to_national_ratio
+AK,Acute Care - Department of Defense,2,123.0,1.0,73.0,,
+AK,Acute Care Hospitals,8,154.29,1.29,62.5,20754.13,0.7553
+AK,Critical Access Hospitals,13,120.27,0.45,62.0,,
+AL,Acute Care Hospitals,71,159.45,2.38,63.44,22978.56,0.8363
+AL,Childrens,2,,,,,
+AL,Critical Access Hospitals,10,113.1,2.4,68.0,,
+AL,Rural Emergency Hospital,4,,,,,
+AR,Acute Care Hospitals,40,156.51,2.41,63.88,25843.61,0.9405
+AR,Childrens,2,,,,,
+AR,Critical Access Hospitals,31,109.81,1.04,59.0,,
+AR,Rural Emergency Hospital,5,,,,,
+AS,Acute Care Hospitals,1,,,,,
+AZ,Acute Care Hospitals,66,187.43,2.4,61.45,24925.1,0.9071
+AZ,Childrens,1,,,,,
+AZ,Critical Access Hospitals,17,132.27,1.17,63.33,,
+CA,Acute Care - Department of Defense,5,139.6,1.6,60.33,,
+CA,Acute Care Hospitals,275,189.05,2.18,69.46,27998.07,1.019
+CA,Childrens,10,,,,,
+CA,Critical Access Hospitals,38,125.78,2.1,77.38,,
+CO,Acute Care - Department of Defense,1,129.0,1.0,58.0,,
+CO,Acute Care Hospitals,51,146.02,0.86,73.94,27133.28,0.9875
+CO,Childrens,2,,,,,
+CO,Critical Access Hospitals,32,120.33,0.65,83.25,,
+CT,Acute Care Hospitals,26,193.6,1.64,60.48,26200.12,0.9535
+CT,Childrens,1,,,,,
+DC,Acute Care Hospitals,7,311.4,6.5,57.4,29562.5,1.0759
+DC,Childrens,1,,,,,
+DE,Acute Care Hospitals,6,219.17,4.17,59.0,25983.17,0.9456
+DE,Childrens,1,,,,,
+FL,Acute Care - Department of Defense,2,116.0,1.0,70.0,,
+FL,Acute Care Hospitals,167,156.53,0.97,73.56,27048.72,0.9844
+FL,Childrens,3,,,,,
+FL,Critical Access Hospitals,12,121.6,0.7,94.0,,
+GA,Acute Care - Department of Defense,3,133.33,2.67,59.0,,
+GA,Acute Care Hospitals,95,190.16,1.88,60.05,24376.05,0.8871
+GA,Childrens,2,,,,,
+GA,Critical Access Hospitals,31,112.57,1.21,56.22,,
+GA,Rural Emergency Hospital,1,,,,,
+GU,Acute Care Hospitals,2,142.0,,28.0,,
+HI,Acute Care - Department of Defense,1,186.0,5.0,67.0,,
+HI,Acute Care Hospitals,11,154.8,0.9,78.82,24009.73,0.8738
+HI,Childrens,2,,,,,
+HI,Critical Access Hospitals,9,73.0,0.17,56.0,,
+IA,Acute Care Hospitals,30,164.5,3.2,64.76,24155.07,0.8791
+IA,Critical Access Hospitals,82,113.89,0.41,63.89,,
+ID,Acute Care Hospitals,16,150.46,1.31,68.42,27400.6,0.9972
+ID,Critical Access Hospitals,26,121.72,0.61,52.67,,
+ID,Rural Emergency Hospital,1,,,,,
+IL,Acute Care Hospitals,113,194.95,3.14,62.61,25926.61,0.9436
+IL,Childrens,3,,,,,
+IL,Critical Access Hospitals,56,121.8,0.88,73.32,,
+IN,Acute Care Hospitals,79,158.78,1.66,63.16,26036.57,0.9476
+IN,Critical Access Hospitals,33,124.03,1.1,76.09,,
+KS,Acute Care - Department of Defense,1,134.0,4.0,,,
+KS,Acute Care Hospitals,43,143.79,1.62,66.76,25289.8,0.9204
+KS,Childrens,1,,,,,
+KS,Critical Access Hospitals,83,113.29,0.12,65.2,,
+KS,Rural Emergency Hospital,3,,,,,
+KY,Acute Care - Department of Defense,1,156.0,3.0,67.0,,
+KY,Acute Care Hospitals,59,162.12,1.64,65.86,24873.12,0.9052
+KY,Critical Access Hospitals,29,108.14,0.63,62.63,,
+KY,Rural Emergency Hospital,2,,,,,
+LA,Acute Care - Department of Defense,1,101.0,1.0,,,
+LA,Acute Care Hospitals,83,146.83,1.75,67.28,26584.82,0.9675
+LA,Childrens,1,,,,,
+LA,Critical Access Hospitals,27,110.46,1.09,74.14,,
+LA,Rural Emergency Hospital,1,,,,,
+MA,Acute Care Hospitals,55,224.92,4.14,54.27,24350.02,0.8862
+MA,Childrens,3,,,,,
+MA,Critical Access Hospitals,4,149.25,1.33,,,
+MD,Acute Care - Department of Defense,1,183.0,1.0,60.0,,
+MD,Acute Care Hospitals,43,241.03,3.12,66.38,,
+MD,Childrens,2,,,,,
+ME,Acute Care Hospitals,13,186.69,3.31,65.69,22858.54,0.8319
+ME,Critical Access Hospitals,18,140.0,1.94,67.67,,
+MI,Acute Care Hospitals,89,180.3,2.4,60.17,24331.62,0.8855
+MI,Childrens,1,,,,,
+MI,Critical Access Hospitals,36,119.06,0.77,77.4,,
+MI,Rural Emergency Hospital,1,,,,,
+MN,Acute Care Hospitals,45,166.48,2.34,59.51,23151.09,0.8426
+MN,Childrens,2,,,,,
+MN,Critical Access Hospitals,76,115.16,0.49,54.53,,
+MN,Rural Emergency Hospital,1,,,,,
+MO,Acute Care - Department of Defense,1,134.0,,,,
+MO,Acute Care Hospitals,61,186.54,2.77,61.58,25256.98,0.9192
+MO,Childrens,4,,,,,
+MO,Critical Access Hospitals,35,117.91,0.81,70.22,,
+MO,Rural Emergency Hospital,1,,,,,
+MP,Acute Care Hospitals,1,,,,,
+MS,Acute Care - Department of Defense,1,114.0,1.0,55.0,,
+MS,Acute Care Hospitals,59,150.02,2.86,62.87,23794.96,0.866
+MS,Critical Access Hospitals,30,92.32,1.31,66.5,,
+MS,Rural Emergency Hospital,7,,,,,
+MT,Acute Care Hospitals,11,164.5,1.6,72.8,23869.45,0.8687
+MT,Critical Access Hospitals,49,111.43,0.97,71.6,,
+MT,Rural Emergency Hospital,1,,,,,
+NC,Acute Care - Department of Defense,2,185.5,3.0,44.0,,
+NC,Acute Care Hospitals,80,192.67,2.39,64.57,23662.45,0.8612
+NC,Critical Access Hospitals,20,139.65,1.43,80.0,,
+ND,Acute Care Hospitals,7,179.83,3.33,50.0,25527.29,0.929
+ND,Critical Access Hospitals,36,103.75,0.42,69.17,,
+ND,Rural Emergency Hospital,1,,,,,
+NE,Acute Care Hospitals,25,138.1,1.05,65.79,27625.88,1.0054
+NE,Childrens,2,,,,,
+NE,Critical Access Hospitals,61,113.8,0.15,60.92,,
+NE,Rural Emergency Hospital,2,,,,,
+NH,Acute Care Hospitals,13,211.15,3.23,57.69,24701.15,0.899
+NH,Critical Access Hospitals,13,136.0,1.1,66.0,,
+NJ,Acute Care Hospitals,61,187.43,1.63,72.41,28752.25,1.0464
+NJ,Childrens,2,,,,,
+NM,Acute Care Hospitals,26,185.76,2.95,56.27,22874.54,0.8325
+NM,Critical Access Hospitals,13,138.18,1.78,58.83,,
+NM,Rural Emergency Hospital,1,,,,,
+NV,Acute Care - Department of Defense,1,128.0,2.0,60.0,,
+NV,Acute Care Hospitals,22,160.05,0.8,70.75,27715.85,1.0087
+NV,Critical Access Hospitals,13,126.0,1.0,72.5,,
+NY,Acute Care - Department of Defense,1,67.0,0.0,,,
+NY,Acute Care Hospitals,127,213.98,2.36,59.98,26025.81,0.9472
+NY,Childrens,1,,,,,
+NY,Critical Access Hospitals,21,109.25,2.0,61.38,,
+NY,Rural Emergency Hospital,3,,,,,
+OH,Acute Care - Department of Defense,1,102.0,0.0,69.0,,
+OH,Acute Care Hospitals,117,171.37,1.81,63.96,25107.47,0.9138
+OH,Childrens,8,,,,,
+OH,Critical Access Hospitals,33,121.69,0.73,65.47,,
+OK,Acute Care Hospitals,74,134.9,1.6,60.76,24780.38,0.9019
+OK,Childrens,2,,,,,
+OK,Critical Access Hospitals,39,101.31,0.59,63.0,,
+OK,Rural Emergency Hospital,6,,,,,
+OR,Acute Care Hospitals,32,186.83,3.7,54.34,23360.75,0.8502
+OR,Childrens,1,,,,,
+OR,Critical Access Hospitals,25,125.13,1.65,62.21,,
+PA,Acute Care Hospitals,131,196.01,1.91,62.87,25156.34,0.9155
+PA,Childrens,5,,,,,
+PA,Critical Access Hospitals,18,124.29,0.8,66.7,,
+PR,Acute Care Hospitals,53,263.86,1.14,20.07,,
+PR,Childrens,1,,,,,
+RI,Acute Care Hospitals,10,220.5,3.2,63.0,24338.4,0.8858
+SC,Acute Care - Department of Defense,1,,,,,
+SC,Acute Care Hospitals,51,163.7,2.08,67.82,24986.04,0.9093
+SC,Childrens,1,,,,,
+SC,Critical Access Hospitals,3,109.0,0.0,77.0,,
+SD,Acute Care Hospitals,17,133.45,0.82,65.36,24872.44,0.9052
+SD,Childrens,1,,,,,
+SD,Critical Access Hospitals,39,108.56,0.17,72.75,,
+SD,Rural Emergency Hospital,1,,,,,
+TN,Acute Care Hospitals,78,168.91,1.71,62.2,25951.17,0.9445
+TN,Childrens,2,,,,,
+TN,Critical Access Hospitals,15,124.87,1.14,62.0,,
+TN,Rural Emergency Hospital,2,,,,,
+TX,Acute Care - Department of Defense,3,179.33,3.0,52.0,,
+TX,Acute Care Hospitals,286,156.02,1.48,67.75,27764.31,1.0105
+TX,Childrens,16,,,,,
+TX,Critical Access Hospitals,94,112.12,0.71,74.93,,
+TX,Rural Emergency Hospital,4,,,,,
+UT,Acute Care Hospitals,33,142.09,0.84,67.13,25631.52,0.9328
+UT,Childrens,1,,,,,
+UT,Critical Access Hospitals,13,120.92,0.14,54.4,,
+VA,Acute Care - Department of Defense,2,177.5,2.0,53.0,,
+VA,Acute Care Hospitals,73,169.87,1.76,66.82,24509.61,0.892
+VA,Childrens,2,,,,,
+VA,Critical Access Hospitals,9,135.14,0.88,54.5,,
+VI,Acute Care Hospitals,2,,,33.0,,
+VT,Acute Care Hospitals,6,195.83,2.67,61.33,22211.67,0.8084
+VT,Critical Access Hospitals,8,137.5,1.0,,,
+WA,Acute Care - Department of Defense,1,180.0,3.0,62.0,,
+WA,Acute Care Hospitals,46,194.02,2.82,59.27,25278.84,0.92
+WA,Childrens,3,,,,,
+WA,Critical Access Hospitals,38,130.75,1.46,72.11,,
+WA,Rural Emergency Hospital,1,,,,,
+WI,Acute Care Hospitals,64,154.77,1.49,71.6,23244.59,0.846
+WI,Childrens,2,,,,,
+WI,Critical Access Hospitals,58,119.32,0.51,72.52,,
+WV,Acute Care Hospitals,25,174.39,2.24,61.77,24511.83,0.8921
+WV,Critical Access Hospitals,21,114.29,0.94,60.44,,
+WY,Acute Care Hospitals,9,151.57,0.86,64.71,23683.0,0.8619
+WY,Critical Access Hospitals,19,113.71,0.23,60.6,,

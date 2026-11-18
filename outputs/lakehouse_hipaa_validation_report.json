@@ -1,0 +1,236 @@
+{
+  "generated_at_utc": "2026-11-18T08:25:47.278161+00:00",
+  "dag_topological_order": [
+    "bronze_cms_csv_and_rest_api_ingest",
+    "bronze_excel_transfer_roster_ingest",
+    "silver_gold_medallion_and_rbac_views"
+  ],
+  "dag_workload_log": [
+    {
+      "task_id": "bronze_cms_csv_and_rest_api_ingest",
+      "layer": "BRONZE",
+      "upstream_dependencies": "NONE",
+      "elapsed_seconds": 0.5092,
+      "sla_seconds": 45.0,
+      "sla_met": true,
+      "status": "SUCCESS"
+    },
+    {
+      "task_id": "bronze_excel_transfer_roster_ingest",
+      "layer": "BRONZE",
+      "upstream_dependencies": "bronze_cms_csv_and_rest_api_ingest",
+      "elapsed_seconds": 0.0326,
+      "sla_seconds": 15.0,
+      "sla_met": true,
+      "status": "SUCCESS"
+    },
+    {
+      "task_id": "silver_gold_medallion_and_rbac_views",
+      "layer": "SILVER_GOLD",
+      "upstream_dependencies": "bronze_cms_csv_and_rest_api_ingest,bronze_excel_transfer_roster_ingest",
+      "elapsed_seconds": 0.6614,
+      "sla_seconds": 30.0,
+      "sla_met": true,
+      "status": "SUCCESS"
+    }
+  ],
+  "cms_provenance": {
+    "datasets": {
+      "hospital_general": {
+        "dataset_id": "xubh-q36u",
+        "csv_url": "https://data.cms.gov/provider-data/sites/default/files/resources/d3bf87c5505155f549d603688414f3c6_1793059553/Hospital_General_Information_2.csv",
+        "sha256": "ff2a82a7149975fb86348e7f901aa3bcd9f3701e8b0ecd0ab34702df193ff559",
+        "sha256_matches_pinned": true,
+        "row_count": 5435,
+        "column_count": 38
+      },
+      "timely_effective_care": {
+        "dataset_id": "yv7e-xc69",
+        "csv_url": "https://data.cms.gov/provider-data/sites/default/files/resources/0437b5494ac61507ad90f2af6b8085a7_1792599910/Timely_and_Effective_Care-Hospital.csv",
+        "sha256": "473241c09b40010baa4b734d0b8bed540d2c275491368da5d08be4f19a019b92",
+        "sha256_matches_pinned": true,
+        "row_count": 161313,
+        "column_count": 16
+      },
+      "medicare_spending": {
+        "dataset_id": "nrth-mfg3",
+        "csv_url": "https://data.cms.gov/provider-data/sites/default/files/resources/1f8cde9e222d5d49f88a894bcf7a8981_1770163638/Medicare_Hospital_Spending_by_Claim.csv",
+        "sha256": "b48954a77373199480e5c1cc1b160f7f92ad90a934316e3099b75dd23b13ee52",
+        "sha256_matches_pinned": true,
+        "row_count": 63646,
+        "column_count": 13
+      }
+    },
+    "rest_api_metadata": {
+      "hospital_general": {
+        "api_url": "https://data.cms.gov/provider-data/api/1/metastore/schemas/dataset/items/xubh-q36u",
+        "title": "Hospital General Information",
+        "modified": "2026-10-26",
+        "theme": [
+          "Hospitals"
+        ],
+        "identifier": "xubh-q36u"
+      },
+      "timely_effective_care": {
+        "api_url": "https://data.cms.gov/provider-data/api/1/metastore/schemas/dataset/items/yv7e-xc69",
+        "title": "Timely and Effective Care - Hospital",
+        "modified": "2026-10-19",
+        "theme": [
+          "Hospitals"
+        ],
+        "identifier": "yv7e-xc69"
+      },
+      "medicare_spending": {
+        "api_url": "https://data.cms.gov/provider-data/api/1/metastore/schemas/dataset/items/nrth-mfg3",
+        "title": "Medicare Hospital Spending by Claim",
+        "modified": "2026-01-26",
+        "theme": [
+          "Hospitals"
+        ],
+        "identifier": "nrth-mfg3"
+      }
+    }
+  },
+  "excel_spreadsheet_ingestion": {
+    "workbook_path": ".data_cache/regional_transfer_dispatch_roster.xlsx",
+    "ignored_helper_sheets": [
+      "README_Instructions"
+    ],
+    "raw_spreadsheet_rows": 618,
+    "deduplicated_facility_mappings": 600,
+    "duplicates_removed": 18,
+    "recovered_leading_zero_ccns": 575
+  },
+  "warehouse_and_rbac_metrics": {
+    "source_rows_total": 230394,
+    "dim_facility_count": 5435,
+    "dim_clinical_measure_count": 35,
+    "fct_ed_timely_care_promoted": 161313,
+    "fct_medicare_claim_spending_promoted": 62942,
+    "orphan_quarantined_ed": 0,
+    "orphan_quarantined_financial": 704,
+    "suppressed_small_cells_count": 552,
+    "numeric_ed_scores_parsed": 63549,
+    "executive_semantic_mart_rows": 177,
+    "root_cause_analysis": {
+      "ed_high_vs_low_volume_dwell_minutes_op18b": {
+        "n_group_a": 1251,
+        "n_group_b": 2505,
+        "mean_group_a": 195.819,
+        "mean_group_b": 140.577,
+        "diff": 55.242,
+        "pct_diff": 39.3,
+        "t_stat": 34.2148,
+        "df": 2044.8,
+        "p_value": 1.4583925579365632e-256
+      },
+      "acute_vs_critical_access_dwell_minutes_op18b": {
+        "n_group_a": 2783,
+        "n_group_b": 1263,
+        "mean_group_a": 175.321,
+        "mean_group_b": 116.502,
+        "diff": 58.819,
+        "pct_diff": 50.49,
+        "t_stat": 50.471,
+        "df": 3933.8,
+        "p_value": 0.0
+      },
+      "prolonged_ed_boarding_vs_episode_spending_usd": {
+        "n_group_a": 1123,
+        "n_group_b": 1563,
+        "mean_group_a": 26780.89,
+        "mean_group_b": 24935.855,
+        "diff": 1845.034,
+        "pct_diff": 7.4,
+        "t_stat": 12.2123,
+        "df": 2656.1,
+        "p_value": 2.67103481658732e-34
+      }
+    },
+    "quality_and_security_gates": [
+      {
+        "gate_id": "G01_SQLITE_INTEGRITY_OK",
+        "passed": true,
+        "detail": "integrity_check=ok"
+      },
+      {
+        "gate_id": "G02_ZERO_FOREIGN_KEY_VIOLATIONS",
+        "passed": true,
+        "detail": "fk_violations=0"
+      },
+      {
+        "gate_id": "G03_FACILITY_DIMENSION_POPULATED",
+        "passed": true,
+        "detail": "dim_facility=5435"
+      },
+      {
+        "gate_id": "G04_CLINICAL_MEASURES_POPULATED",
+        "passed": true,
+        "detail": "dim_clinical_measure=35"
+      },
+      {
+        "gate_id": "G05_ED_ROW_CONSERVATION",
+        "passed": true,
+        "detail": "promoted=161313 + quarantined=0 == source=161313"
+      },
+      {
+        "gate_id": "G06_FINANCIAL_ROW_CONSERVATION",
+        "passed": true,
+        "detail": "promoted=62942 + quarantined=704 == source=63646"
+      },
+      {
+        "gate_id": "G07_EXCEL_LEADING_ZERO_CCN_RECOVERY",
+        "passed": true,
+        "detail": "recovered_ccns=575"
+      },
+      {
+        "gate_id": "G08_EXCEL_HELPER_SHEET_SKIPPED_AND_DEDUPED",
+        "passed": true,
+        "detail": "ignored=['README_Instructions'], deduped=18"
+      },
+      {
+        "gate_id": "G09_HIPAA_VIEW_EXCLUDES_FINANCIAL_AND_RAW_PII",
+        "passed": true,
+        "detail": "hipaa_cols=['condition_category', 'dispatch_zone', 'ed_volume_cohort', 'emergency_services', 'facility_id', 'hipaa_safe_harbor_zip3', 'hospital_type', 'measure_id', 'numeric_score', 'sample_size', 'small_cell_suppressed', 'state', 'transfer_tier']"
+      },
+      {
+        "gate_id": "G10_HIPAA_SAFE_HARBOR_ZIP3_POPULATION_MASK",
+        "passed": true,
+        "detail": "restricted_zip3_leaks=0"
+      },
+      {
+        "gate_id": "G11_HIPAA_SMALL_CELL_SUPPRESSION_ENFORCED",
+        "passed": true,
+        "detail": "suppressed_rows_quarantined=552, view_leaks=0"
+      },
+      {
+        "gate_id": "G12_FINANCIAL_VIEW_EXCLUDES_CLINICAL_SAMPLES_AND_PII",
+        "passed": true,
+        "detail": "financial_cols=['avg_spending_hospital', 'avg_spending_national', 'avg_spending_state', 'claim_type', 'dispatch_zone', 'episode_period', 'facility_id', 'hospital_ownership', 'hospital_to_national_ratio', 'hospital_type', 'pct_spending_hospital', 'state']"
+      },
+      {
+        "gate_id": "G13_PII_SHA256_TOKENIZATION_100_PCT",
+        "passed": true,
+        "detail": "unmasked_pii_tokens=0"
+      },
+      {
+        "gate_id": "G14_STATISTICAL_RCA_ED_VOLUME_SIGNIFICANT",
+        "passed": true,
+        "detail": "Welch t=34.2148, diff=55.242 min"
+      },
+      {
+        "gate_id": "G15_EXECUTIVE_SEMANTIC_MART_READY",
+        "passed": true,
+        "detail": "executive_semantic_rows=177"
+      },
+      {
+        "gate_id": "G16_TOPOLOGICAL_DAG_AND_WORKLOAD_SLA_MET",
+        "passed": true,
+        "detail": "topo_order=['bronze_cms_csv_and_rest_api_ingest', 'bronze_excel_transfer_roster_ingest', 'silver_gold_medallion_and_rbac_views'], tasks_completed=3"
+      }
+    ]
+  },
+  "gates_passed": 16,
+  "gates_total": 16,
+  "all_gates_passed": true
+}
